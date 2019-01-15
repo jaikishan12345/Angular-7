@@ -1,3 +1,8 @@
+<label >Server Name</label>
+<input type="text"
+class="form-control"
+(input)="onUpdateServerName($event)"> <!-- $ sign is used to fetch the event data-->
+<p>{{serverName}}</p>
 <button 
 class="btn btn-primary" 
 [disabled] = "!allowNewServer"
