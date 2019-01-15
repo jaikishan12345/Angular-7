@@ -15,4 +15,7 @@ export class SuccessAlertComponent implements OnInit {
   }
   serverId: number = 10;
   serverStatus: string = 'offline';
+  getServerStatus(){
+    return this.getServerStatus
+  }
 }
