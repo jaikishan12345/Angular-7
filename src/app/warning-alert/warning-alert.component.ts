@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./warning-alert.component.css']
 })
 export class WarningAlertComponent implements OnInit {
-
   allowNewServer = false;
+  serverCreationStatus = 'No server was created !';
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true
@@ -15,6 +15,10 @@ export class WarningAlertComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+  
+  onCreateServer() {
+      this.serverCreationStatus = 'Server was created';
   }
 
 }
